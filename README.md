@@ -20,7 +20,7 @@ install
         s.src = SERVER + '/js/error_track.js?s=' + encodeURI(SERVER);
         (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(s);
     })();
-´´´
+
 - point your browser to http://youserver/SITE_CODE. SITE_CODE is the variable you set in the first step.
 
 
@@ -43,5 +43,7 @@ heroku setup
     
     $ heroku run python app/manage.py syncdb
 
+
+don't forget to change variable SERVER in the tracker snippet to the url that heroku provides you
 
 that's all, enjoy
