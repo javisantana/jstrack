@@ -9,7 +9,7 @@ install
 
 - First edit track_settings.py file and change SITE_CODE var to one you like. Keep it secret.
 
-- First deploy this djando app in your server. You can do it in heroku
+- First deploy this djando app in your server. You can do it in heroku (see heroku setup)
 - add the next tracking code in your aplication
 
     (function() {
@@ -22,3 +22,26 @@ install
     })();
 
 - point your browser to http://youserver/SITE_CODE. SITE_CODE is the variable you set in the first step.
+
+
+heroku setup
+============
+
+- install heroku gem 
+    
+    $ gem install heroku
+
+- create the app:
+
+    $ heroku create --stack cedar
+
+- push 
+    
+    $ git push heroku master
+
+- create database
+    
+    $ heroku run python app/manage.py syncdb
+
+
+that's all, enjoy
