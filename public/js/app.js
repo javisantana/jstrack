@@ -60,7 +60,7 @@ var App = (function() {
         errors.fetch();
         setInterval(function() {
             //errors.fetch();
-        }, 1000*3);
+        }, 1000*30);
     }
     return {
         run: run
