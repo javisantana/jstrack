@@ -59,7 +59,7 @@ var App = (function() {
         errors.set_code(site_code);
         errors.fetch();
         setInterval(function() {
-            //errors.fetch();
+            errors.fetch();
         }, 1000*30);
     }
     return {
